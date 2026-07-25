@@ -106,19 +106,21 @@ export default function HeroSection() {
             </button>
           </motion.div>
 
-          {/* Stats with count-up — grid keeps rows even on every screen */}
+          {/* Stats card centered under the hero text */}
           <motion.div
             variants={item}
-            className="grid grid-cols-3 sm:grid-cols-5 gap-x-4 gap-y-5 max-w-md sm:max-w-none"
+            className="mx-auto max-w-fit rounded-3xl border border-white/15 bg-white/10 px-5 py-5 sm:px-6 sm:py-6 backdrop-blur-md shadow-2xl shadow-black/10"
           >
-            {personalInfo.stats.map((stat) => (
-              <div key={stat.label}>
-                <p className="text-2xl sm:text-3xl font-extrabold text-white">
-                  <CountUp value={stat.value} />
-                </p>
-                <p className="text-gray-400 text-xs sm:text-sm mt-0.5">{stat.label}</p>
-              </div>
-            ))}
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 sm:gap-6 text-center justify-items-center">
+              {personalInfo.stats.map((stat) => (
+                <div key={stat.label} className="min-w-[4.5rem]">
+                  <p className="text-2xl sm:text-3xl font-extrabold text-white">
+                    <CountUp value={stat.value} />
+                  </p>
+                  <p className="text-gray-300 text-xs sm:text-sm mt-0.5">{stat.label}</p>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </motion.div>
 
