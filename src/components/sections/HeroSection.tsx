@@ -10,10 +10,10 @@ import { scrollToSection } from '@/lib/utils';
 // Positions are relative to the phone-sized wrapper div, so they always
 // peek just outside the phone's own edges regardless of viewport width.
 const skillCards = [
-  { label: 'Senior App Developer', sublabel: 'Speciality', icon: '📱', position: 'top-[8%]    -right-[160px]' },
-  { label: 'Backend Developer',    sublabel: 'Also',       icon: '🔧', position: 'top-[42%]   -right-[160px]' },
-  { label: 'Web Developer',        sublabel: 'Also',       icon: '🌐', position: 'bottom-[30%] -left-[160px]' },
-  { label: 'UI/UX Expert',         sublabel: '',           icon: '🎨', position: 'bottom-[12%] -left-[160px]' },
+  { label: 'Data Analyst',       sublabel: 'Speciality', icon: '📊', position: 'top-[8%]    -right-[160px]' },
+  { label: 'SQL Developer',      sublabel: 'Also',       icon: '🗄️', position: 'top-[42%]   -right-[160px]' },
+  { label: 'Power BI Developer', sublabel: 'Also',       icon: '📈', position: 'bottom-[30%] -left-[160px]' },
+  { label: 'Python Analyst',     sublabel: '',           icon: '🐍', position: 'bottom-[12%] -left-[160px]' },
 ];
 
 const container: Variants = {

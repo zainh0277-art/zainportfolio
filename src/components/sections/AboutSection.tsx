@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { personalInfo } from '@/data/personal';
-import { experiences, educationList } from '@/data/experience';
+import { educationList } from '@/data/experience';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Reveal from '@/components/ui/Reveal';
 import CountUp from '@/components/ui/CountUp';
@@ -37,7 +37,7 @@ export default function AboutSection() {
                   </div>
                   <h3 className="text-xl font-bold">{personalInfo.name}</h3>
                   <span className="mt-2 text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 px-3 py-1 rounded-full">
-                    Product Builder
+                    Data Analyst
                   </span>
                 </div>
 
@@ -101,60 +101,6 @@ export default function AboutSection() {
               </div>
             </div>
           </Reveal>
-
-          {/* Experience Timeline — hidden when no entries */}
-          {experiences.length > 0 && (
-          <div className="min-w-0">
-            <Reveal direction="left" className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 tracking-tight">
-                I build products that ship —{' '}
-                <span className="text-blue-600">and stay shipped.</span>
-              </h3>
-              <p className="text-gray-500 leading-relaxed">
-                Over the years I&apos;ve led development for clients across multiple countries. Not as a contractor who disappears after delivery, but as the engineer who owns the architecture, leads the team, and stays accountable to the outcome.
-              </p>
-            </Reveal>
-
-            <div className="space-y-6">
-              {experiences.map((exp, i) => (
-                <Reveal
-                  key={exp.id}
-                  direction="left"
-                  delay={i * 0.1}
-                  className="relative pl-10 before:absolute before:left-3.5 before:top-8 before:bottom-[-1.5rem] before:w-0.5 before:bg-gray-100 last:before:hidden"
-                >
-                  <div className="absolute left-0 top-1 w-7 h-7 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-sm z-10">
-                    {exp.flag}
-                  </div>
-
-                  <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
-                      <div>
-                        <h4 className="font-bold text-gray-900">{exp.role}</h4>
-                        <p className="text-sm font-semibold" style={{ color: exp.companyColor }}>
-                          {exp.company}
-                        </p>
-                      </div>
-                      <span
-                        className={`text-xs font-semibold px-3 py-1 rounded-full ${exp.current ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'}`}
-                      >
-                        {exp.period}
-                      </span>
-                    </div>
-                    <ul className="space-y-1.5">
-                      {exp.bullets.map((bullet) => (
-                        <li key={bullet} className="text-sm text-gray-600 flex items-start gap-2">
-                          <span className="text-blue-500 mt-1 text-xs">›</span>
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-          )}
         </div>
 
         {/* Stats bar with colored top borders */}

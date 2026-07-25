@@ -42,7 +42,10 @@ export default function ContactSection() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`,
     );
-    window.open(`mailto:${personalInfo.email}?subject=${subject}&body=${body}`);
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}&su=${subject}&body=${body}`,
+      '_blank',
+    );
     setStatus('sent');
     setForm(EMPTY_FORM);
     setTimeout(() => setStatus('idle'), 5000);
@@ -156,7 +159,7 @@ export default function ContactSection() {
                 ),
                 label: 'Email',
                 value: personalInfo.email,
-                href: `mailto:${personalInfo.email}`,
+                href: `https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`,
                 bg: 'bg-blue-50',
               },
               {
@@ -194,7 +197,7 @@ export default function ContactSection() {
                 <div>
                   <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">{item.label}</p>
                   {item.href ? (
-                    <a href={item.href} className="text-gray-900 font-medium hover:text-blue-600 transition-colors break-all">
+                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="text-gray-900 font-medium hover:text-blue-600 transition-colors break-all">
                       {item.value}
                     </a>
                   ) : (
