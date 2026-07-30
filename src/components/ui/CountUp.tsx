@@ -25,7 +25,7 @@ function parseValue(value: string) {
 /**
  * Animated number counter that triggers once it scrolls into view.
  * Uses requestAnimationFrame with an ease-out curve for a smooth,
- * Flutter-like count-up.
+ * Smooth count-up animation.
  */
 export default function CountUp({ value, duration = 1600, className }: CountUpProps) {
   const { prefix, number, suffix, decimals } = parseValue(value);

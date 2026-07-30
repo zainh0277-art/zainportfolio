@@ -31,7 +31,7 @@ const offsetFor = (direction: Direction, distance: number) => {
 };
 
 /**
- * Flutter.dev-style scroll reveal: fade + directional slide with
+ * Scroll reveal: fade + directional slide with
  * Material easing. Single responsibility — wrap any element to animate
  * it into view once it enters the viewport.
  */
@@ -55,7 +55,7 @@ export default function Reveal({
       transition={{
         duration,
         delay,
-        ease: [0.4, 0, 0.2, 1], // Material / Flutter standard curve
+        ease: [0.4, 0, 0.2, 1], // Material standard curve
       }}
     >
       {children}

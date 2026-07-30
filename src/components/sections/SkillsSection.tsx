@@ -11,10 +11,10 @@ export default function SkillsSection() {
 
   const filters = [
     { id: 'all', label: 'All Skills', dotColor: '#2563eb' },
-    { id: 'mobile', label: 'Mobile Apps', dotColor: '#3b82f6' },
-    { id: 'backend', label: 'Backend APIs', dotColor: '#22c55e' },
-    { id: 'frontend', label: 'Cross-Platform', dotColor: '#a855f7' },
-    { id: 'devops', label: 'DevOps & Tools', dotColor: '#f97316' },
+    { id: 'technical', label: 'Technical', dotColor: '#3b82f6' },
+    { id: 'bi', label: 'Business Intelligence', dotColor: '#22c55e' },
+    { id: 'core', label: 'Core Competencies', dotColor: '#a855f7' },
+    { id: 'analysis', label: 'Analytical Delivery', dotColor: '#f97316' },
   ];
 
   const visibleCategories =
@@ -26,10 +26,10 @@ export default function SkillsSection() {
     <section id="skills" className="py-24 bg-[#f8f9fc]">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
-          eyebrow="Full Stack Skill Set"
+          eyebrow="Analyst Skill Stack"
           title="My Skills"
           accentWord="Skills"
-          description="Primarily a Flutter specialist — backed by Node.js for backend, React & Next.js when the project calls for it."
+          description="Technical and business intelligence skills built for analysis, reporting, forecasting, and stakeholder decision support."
           centered
         />
 
