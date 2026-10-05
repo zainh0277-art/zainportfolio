@@ -24,4 +24,4 @@ Check 320, 375, 768, 1024 and 1440 pixel layouts, mobile navigation, keyboard fo
 
 ## Validation status
 
-Local lint, TypeScript, production build and exported metadata/form checks passed. Browser checks are included in CI because the local browser download failed. Inbox delivery, public deployment and external search-account changes are not yet verified.
+Local lint, TypeScript, production build and exported metadata/form checks passed. GitHub Actions run 37336882197 passed browser checks at 320, 375, 768, 1024 and 1440px, including mobile navigation and form validation. Additional short-screen coverage is included in the follow-up fix. Inbox delivery, public deployment and external search-account changes are not yet verified.

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { cn, scrollToSection } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import { navItems } from '@/data/navigation';
 import { personalInfo } from '@/data/personal';
 
@@ -21,9 +21,10 @@ export default function Navbar() {
         const rect = el.getBoundingClientRect();
         return rect.top <= 100 && rect.bottom >= 100;
       });
-      if (current) setActiveSection(current);
+      setActiveSection(current ?? 'home');
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -36,7 +37,7 @@ export default function Navbar() {
 
   const handleNavClick = (href: string) => {
     setMenuOpen(false);
-    scrollToSection(href.replace('#', ''));
+    setActiveSection(href.replace('#', ''));
   };
 
   const [firstName, lastName] = personalInfo.name.split(' ');
@@ -79,6 +80,7 @@ export default function Navbar() {
               <a
                 key={item.href}
                 href={item.href} onClick={() => handleNavClick(item.href)}
+                aria-current={activeSection === item.href.slice(1) ? 'location' : undefined}
                 className={cn(
                   'text-sm font-medium transition-colors relative py-1 cursor-pointer',
                   isActive
@@ -129,7 +131,7 @@ export default function Navbar() {
         inert={!menuOpen}
         className={cn(
           'md:hidden overflow-hidden transition-all duration-300 bg-white/85 backdrop-blur-xl',
-          menuOpen ? 'max-h-96 border-t border-gray-200/60' : 'max-h-0',
+          menuOpen ? 'max-h-[calc(100dvh-4rem)] overflow-y-auto border-t border-gray-200/60' : 'max-h-0',
         )}
       >
         <div className="px-6 py-4 flex flex-col gap-3">
@@ -137,6 +139,7 @@ export default function Navbar() {
             <a
               key={item.href}
               href={item.href} onClick={() => handleNavClick(item.href)}
+                aria-current={activeSection === item.href.slice(1) ? 'location' : undefined}
               className={cn(
                 'text-left text-base font-medium py-2 transition-colors cursor-pointer',
                 activeSection === item.href.replace('#', '')

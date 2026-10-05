@@ -1,13 +1,18 @@
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 (async () => {
+  // Wait for the static server before starting; CI starts it in the background.
+  for (let attempt = 0; ; attempt++) {
+    try { const response = await fetch('http://127.0.0.1:4173'); if (!response.ok) throw new Error('Server not ready'); break; }
+    catch (error) { if (attempt >= 30) throw error; await new Promise(resolve => setTimeout(resolve, 200)); }
+  }
   const browser = await chromium.launch({ headless: true });
   try {
     const page = await browser.newPage();
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    for (const width of [320, 375, 768, 1024, 1440]) {
-      await page.setViewportSize({ width, height: 900 });
+    for (const [width, height] of [[320, 900], [375, 900], [667, 375], [768, 900], [1024, 900], [1440, 900]]) {
+      await page.setViewportSize({ width, height });
       await page.goto('http://127.0.0.1:4173');
       await page.locator('#contact').scrollIntoViewIfNeeded();
       await page.waitForTimeout(1000);
@@ -18,6 +23,9 @@ import { chromium } from 'playwright';
       await page.getByLabel('Your Name', { exact: true }).fill('Validation test');
       await page.getByLabel('Email Address', { exact: true }).fill('invalid-email');
       assert.equal(await page.locator('form').evaluate(form => form.checkValidity()), false);
+      await page.getByLabel('Email Address', { exact: true }).fill('test@example.com');
+      await page.getByLabel('Message', { exact: true }).fill('Browser validation only, no email sent.');
+      assert.equal(await page.locator('form').evaluate(form => form.checkValidity()), true);
       if (width < 768) {
         const toggle = page.getByRole('button', { name: 'Toggle menu' });
         await toggle.click();
@@ -25,7 +33,7 @@ import { chromium } from 'playwright';
         await page.locator('#mobile-menu a[href="#services"]').click();
         assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
       }
-      console.log(`PASS: ${width}px layout, form validation and navigation`);
+      console.log(`PASS: ${width}x${height} layout, form validation and navigation`);
     }
     assert.deepEqual(errors, []);
     // Deliberately do not send external messages. Inbox delivery is a separate launch gate.
