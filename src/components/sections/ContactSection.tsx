@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, type FormEvent } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { personalInfo } from '@/data/personal';
@@ -34,23 +34,6 @@ const socialColors: Record<string, string> = {
 
 export default function ContactSection() {
   const [form, setForm] = useState<ContactFormData>(EMPTY_FORM);
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    const subject = encodeURIComponent(`Portfolio inquiry from ${form.name}`);
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`,
-    );
-    window.open(
-      `https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}&su=${subject}&body=${body}`,
-      '_blank',
-    );
-    setStatus('sent');
-    setForm(EMPTY_FORM);
-    setTimeout(() => setStatus('idle'), 5000);
-  };
-
   const whatsappUrl = `https://wa.me/${personalInfo.phone.replace(/\D/g, '')}?text=${encodeURIComponent("Hi Zain, I saw your portfolio and I'd like to discuss a project.")}`;
 
   return (
@@ -60,7 +43,7 @@ export default function ContactSection() {
           eyebrow="Get In Touch"
           title="Let's Build "
           accentWord="Together"
-          description="Have a project in mind? Fill the form or reach out directly — I usually reply within a few hours."
+          description="Tell me your goal, data format, and preferred timeline. For recruitment, share the role and requirements."
           centered
         />
 
@@ -72,13 +55,18 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            onSubmit={handleSubmit}
-            className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 space-y-5"
+            action={`https://formsubmit.co/${personalInfo.email}`}
+            method="POST"
+            className="bg-white rounded-3xl p-5 sm:p-8 shadow-sm border border-gray-100 space-y-5"
           >
+            <input type="hidden" name="_subject" value="New portfolio inquiry — Zain Hassan" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
+              <label htmlFor="contact-name" className="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
               <input
                 type="text"
+                id="contact-name" name="name" autoComplete="name" maxLength={100}
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -88,9 +76,10 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+              <label htmlFor="contact-email" className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
               <input
                 type="email"
+                id="contact-email" name="email" autoComplete="email" maxLength={254}
                 required
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -100,33 +89,31 @@ export default function ContactSection() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+              <label htmlFor="contact-message" className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
               <textarea
+                id="contact-message" name="message" minLength={10} maxLength={5000}
                 required
                 rows={5}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                placeholder="Tell me about your project..."
+                placeholder="What do you need help with? Include your goal, timeline, and data format."
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 placeholder-gray-400 transition-shadow resize-none"
               />
             </div>
 
             <button
               type="submit"
-              disabled={status === 'sent'}
               className="w-full bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/30 hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer"
             >
-              {status === 'sent' && '✅ Opening your email app…'}
-              {status === 'idle' && (
-                <>
+
                   Send Message
                   <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                </>
-              )}
+
             </button>
 
+            <p className="text-xs text-gray-600 leading-relaxed">Submitting sends your name, email, and message through FormSubmit to my inbox. You may be asked to complete a spam check. Please do not include passwords or confidential data.</p>
             {/* WhatsApp quick button */}
             <a
               href={whatsappUrl}
@@ -159,7 +146,7 @@ export default function ContactSection() {
                 ),
                 label: 'Email',
                 value: personalInfo.email,
-                href: `https://mail.google.com/mail/?view=cm&fs=1&to=${personalInfo.email}`,
+                href: `mailto:${personalInfo.email}`,
                 bg: 'bg-blue-50',
               },
               {
@@ -181,7 +168,7 @@ export default function ContactSection() {
                     <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 ),
-                label: 'Working With',
+                label: 'Open to Remote Work',
                 value: personalInfo.regions,
                 href: null,
                 bg: 'bg-emerald-50',
@@ -214,6 +201,7 @@ export default function ContactSection() {
                 {personalInfo.socialLinks.map((link) => (
                   <a
                     key={link.platform}
+                    aria-label={link.label}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"

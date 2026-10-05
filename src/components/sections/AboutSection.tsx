@@ -5,26 +5,25 @@ import { personalInfo } from '@/data/personal';
 import { educationList } from '@/data/experience';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Reveal from '@/components/ui/Reveal';
-import CountUp from '@/components/ui/CountUp';
 
 const performanceMetrics = [
-  { label: 'Projects Completed', value: '10+' },
-  { label: 'Shipped Work', value: '14+' },
-  { label: 'Insights Delivered', value: '32+' },
-  { label: 'Business Impact', value: '28%' },
+  { label: 'Database work', value: 'SQL & T-SQL' },
+  { label: 'Reporting', value: 'Power BI' },
+  { label: 'Applications', value: 'C# & ADO.NET' },
+  { label: 'Approach', value: 'Business first' },
 ];
 
-const actionVerbs = ['Analyzed', 'Forecasted', 'Quantified', 'Segmented', 'Validated', 'Optimized'];
+const actionVerbs = ['Clarify', 'Clean', 'Model', 'Analyze', 'Validate', 'Explain'];
 
 export default function AboutSection() {
   return (
     <section id="about" className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <SectionHeader
-          eyebrow="Full-Stack Data Analyst"
-          title="Business Data Analyst Portfolio"
-          accentWord="Data Analyst"
-          description="I translate data into business insight, turning raw signals into decisions that improve performance, reporting, and stakeholder alignment."
+          eyebrow="Business Data Analyst"
+          title="Data with a Business Purpose"
+          accentWord="Business Purpose"
+          description="I study Business Data Analytics at UET Lahore. Growing up in a farming family shaped my interest in making data useful for everyday business and agricultural decisions."
           centered
         />
 
@@ -50,8 +49,7 @@ export default function AboutSection() {
                   </div>
                   <h3 className="text-2xl font-bold">{personalInfo.name}</h3>
                   <p className="mt-2 text-sm sm:text-base text-blue-100 max-w-2xl">
-                    Full-Stack Data Analyst focused on SQL, Python, Excel, Tableau, Power BI,
-                    statistical modeling, A/B testing, and KPI dashboarding.
+                    SQL, relational databases, and clear reporting — with the business question at the centre of the work.
                   </p>
                   <span className="mt-4 text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 px-3 py-1 rounded-full">
                     {personalInfo.tagline}
@@ -63,11 +61,11 @@ export default function AboutSection() {
                 </p>
 
                 <div className="mt-8 text-left">
-                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4 text-center">
-                    Performance Snapshot
+                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300 mb-4 text-center">
+                    Areas of Focus
                   </p>
                   <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                    {performanceMetrics.map((metric, index) => (
+                    {performanceMetrics.map((metric) => (
                       <div
                         key={metric.label}
                         className="rounded-2xl bg-white/5 border border-white/10 p-4"
@@ -75,26 +73,17 @@ export default function AboutSection() {
                         <p className="text-[11px] uppercase tracking-[0.2em] text-gray-400">
                           {metric.label}
                         </p>
-                        <p className="text-2xl font-extrabold mt-2 text-white">
-                          <CountUp value={metric.value} />
+                        <p className="text-lg sm:text-xl font-extrabold mt-2 text-white">
+                          {metric.value}
                         </p>
-                        <div className="mt-3 h-1.5 rounded-full bg-white/10 overflow-hidden">
-                          <div
-                            className="h-full rounded-full"
-                            style={{
-                              width: `${70 + index * 7}%`,
-                              background:
-                                'linear-gradient(90deg, rgba(37,99,235,1), rgba(56,189,248,1))',
-                            }}
-                          />
-                        </div>
+
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="mt-8 text-center">
-                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4">
+                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300 mb-4">
                     Analytical Actions
                   </p>
                   <div className="flex flex-wrap justify-center gap-2.5">
@@ -113,7 +102,7 @@ export default function AboutSection() {
                   {[
                     { icon: '📍', text: personalInfo.location },
                     { icon: '✉️', text: personalInfo.email },
-                    { icon: '📊', text: 'Reporting, forecasting, and KPI optimization' },
+                    { icon: '📊', text: 'Database design, reporting, and business analysis' },
                   ].map((row) => (
                     <div
                       key={row.text}
@@ -126,7 +115,7 @@ export default function AboutSection() {
                 </div>
 
                 <div className="mt-7">
-                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-500 mb-3 text-center">
+                  <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-300 mb-3 text-center">
                     Education
                   </p>
                   {educationList.map((edu) => (
@@ -156,7 +145,7 @@ export default function AboutSection() {
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5 mt-16 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-16 justify-items-center">
           {personalInfo.stats.map((stat, i) => {
             const colors = ['#2563eb', '#0ea5e9', '#14b8a6', '#f97316', '#8b5cf6'];
             return (
@@ -167,8 +156,8 @@ export default function AboutSection() {
                     style={{ backgroundColor: colors[i] }}
                   />
                   <div className="text-3xl mb-2">{stat.icon}</div>
-                  <p className="text-3xl font-extrabold" style={{ color: colors[i] }}>
-                    <CountUp value={stat.value} />
+                  <p className="text-2xl font-extrabold" style={{ color: colors[i] }}>
+                    {stat.value}
                   </p>
                   <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
                 </div>

@@ -43,7 +43,7 @@ export interface Education {
 
 export interface Skill {
   name: string;
-  percentage: number;
+  percentage?: number;
 }
 
 export interface SkillCategory {
