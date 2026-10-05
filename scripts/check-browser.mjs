@@ -1,9 +1,21 @@
 import assert from 'node:assert/strict';
+import http from 'node:http';
 import { chromium } from 'playwright';
 (async () => {
   // Wait for the static server before starting; CI starts it in the background.
   for (let attempt = 0; ; attempt++) {
-    try { const response = await fetch('http://127.0.0.1:4173'); if (!response.ok) throw new Error('Server not ready'); break; }
+    try {
+      await new Promise((resolve, reject) => {
+        const request = http.get('http://127.0.0.1:4173', response => {
+          response.resume();
+          response.on('end', () => response.statusCode === 200 ? resolve() : reject(new Error('Server not ready')));
+          response.on('error', reject);
+        });
+        request.on('error', reject);
+        request.setTimeout(2000, () => request.destroy(new Error('Server timeout')));
+      });
+      break;
+    }
     catch (error) { if (attempt >= 30) throw error; await new Promise(resolve => setTimeout(resolve, 200)); }
   }
   const browser = await chromium.launch({ headless: true });
