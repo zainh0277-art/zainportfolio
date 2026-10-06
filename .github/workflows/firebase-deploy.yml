@@ -38,8 +38,22 @@ jobs:
           path: out
       - name: Deploy to Firebase Hosting
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 }}
-          channelId: live
-          projectId: zainportfolio-007
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 }}
+        run: |
+          if [ -z "$FIREBASE_SERVICE_ACCOUNT" ]; then
+            echo "Missing FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 secret."
+            exit 1
+          fi
+          CREDENTIALS_PATH="$(mktemp)"
+          trap 'rm -f "$CREDENTIALS_PATH"' EXIT
+          if printf '%s' "$FIREBASE_SERVICE_ACCOUNT" | jq -e . >/dev/null 2>&1; then
+            printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$CREDENTIALS_PATH"
+          elif printf '%s' "$FIREBASE_SERVICE_ACCOUNT" | base64 --decode | jq -e . >/dev/null 2>&1; then
+            printf '%s' "$FIREBASE_SERVICE_ACCOUNT" | base64 --decode > "$CREDENTIALS_PATH"
+          else
+            echo "FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 must be valid JSON or base64-encoded JSON."
+            exit 1
+          fi
+          export GOOGLE_APPLICATION_CREDENTIALS="$CREDENTIALS_PATH"
+          npx firebase-tools@latest deploy --only hosting --project zainportfolio-007 --non-interactive
