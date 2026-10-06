@@ -1,0 +1,67 @@
+{
+  "source": "Synthetic sample data created for a portfolio demonstration. Not client data.",
+  "project": "Inventory & Reorder Planning",
+  "grain": "One record per SKU",
+  "records": [
+    {
+      "name": "SKU-101",
+      "stock": 120,
+      "daily_demand": 20,
+      "lead_days": 10,
+      "unit_cost": 500,
+      "cover_days": 6.0,
+      "reorder_gap": 80
+    },
+    {
+      "name": "SKU-102",
+      "stock": 450,
+      "daily_demand": 15,
+      "lead_days": 12,
+      "unit_cost": 300,
+      "cover_days": 30.0,
+      "reorder_gap": 0
+    },
+    {
+      "name": "SKU-103",
+      "stock": 80,
+      "daily_demand": 16,
+      "lead_days": 7,
+      "unit_cost": 750,
+      "cover_days": 5.0,
+      "reorder_gap": 32
+    },
+    {
+      "name": "SKU-104",
+      "stock": 600,
+      "daily_demand": 10,
+      "lead_days": 14,
+      "unit_cost": 200,
+      "cover_days": 60.0,
+      "reorder_gap": 0
+    },
+    {
+      "name": "SKU-105",
+      "stock": 200,
+      "daily_demand": 25,
+      "lead_days": 9,
+      "unit_cost": 450,
+      "cover_days": 8.0,
+      "reorder_gap": 25
+    },
+    {
+      "name": "SKU-106",
+      "stock": 350,
+      "daily_demand": 7,
+      "lead_days": 14,
+      "unit_cost": 600,
+      "cover_days": 50.0,
+      "reorder_gap": 0
+    }
+  ],
+  "method": [
+    "Use one synthetic SKU record with stock, daily demand, lead time and unit cost.",
+    "Compute days of cover = stock / daily demand and lead-time demand = daily demand \u00d7 lead days.",
+    "Flag positive gaps between lead-time demand and available stock; review slow-moving items separately."
+  ],
+  "limitations": "Constant synthetic demand, no safety stock, seasonality or open orders. Gaps are review signals, not automatic purchase quantities."
+}

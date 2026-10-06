@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import SectionHeader from '@/components/ui/SectionHeader';
-import ProgressBar from '@/components/ui/ProgressBar';
 import Reveal from '@/components/ui/Reveal';
 import { skillCategories, techTags } from '@/data/skills';
 
@@ -29,7 +28,7 @@ export default function SkillsSection() {
           eyebrow="Analyst Skill Stack"
           title="My Skills"
           accentWord="Skills"
-          description="Technical and business intelligence skills built for analysis, reporting, forecasting, and stakeholder decision support."
+          description="Tools and methods I use in academic and independent work, grouped by the problems they help solve."
           centered
         />
 
@@ -39,6 +38,7 @@ export default function SkillsSection() {
             <button
               key={f.id}
               onClick={() => setActiveFilter(f.id)}
+              aria-pressed={activeFilter === f.id}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold border transition-all cursor-pointer ${
                 activeFilter === f.id
                   ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/30'
@@ -74,11 +74,9 @@ export default function SkillsSection() {
                     <div key={skill.name}>
                       <div className="flex justify-between mb-1.5">
                         <span className="text-sm text-gray-700">{skill.name}</span>
-                        <span className="text-sm text-gray-400 font-medium">
-                          {skill.percentage}%
-                        </span>
+
                       </div>
-                      <ProgressBar percentage={skill.percentage} color={category.accentColor} />
+
                     </div>
                   ))}
                 </div>
@@ -90,7 +88,7 @@ export default function SkillsSection() {
         {/* Tech Stack Tags */}
         <Reveal className="text-center">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-6">
-            Full Technology Stack
+            Core Tools
           </p>
           <div className="flex flex-wrap justify-center gap-2.5">
             {techTags.map((tag) => (

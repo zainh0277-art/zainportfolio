@@ -26,10 +26,10 @@ export default function ProjectsSection() {
     <section id="projects" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
-          eyebrow={`${projects.length}+ Projects Shipped · 15+ Live Apps`}
-          title="Shipped Work"
-          accentWord="Work"
-          description="Click any project to read the full case study — the challenge, what was built, and how."
+          eyebrow="Portfolio Lab · Demo Case Studies"
+          title="Data Into Decisions"
+          accentWord="Decisions"
+          description="Five illustrative analytics projects. Each includes three dashboard views, a business problem, a solution approach and findings from downloadable sample data."
           centered
         />
 
@@ -41,6 +41,7 @@ export default function ProjectsSection() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
+                aria-pressed={activeCategory === cat}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                   activeCategory === cat
                     ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30'
@@ -85,7 +86,7 @@ export default function ProjectsSection() {
       {/* Detail Modal */}
       <AnimatePresence>
         {selected && (
-          <ProjectModal project={selected} onClose={() => setSelected(null)} />
+          <ProjectModal key={selected.id} project={selected} onClose={() => setSelected(null)} />
         )}
       </AnimatePresence>
     </section>

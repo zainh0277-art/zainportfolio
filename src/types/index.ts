@@ -43,7 +43,7 @@ export interface Education {
 
 export interface Skill {
   name: string;
-  percentage: number;
+  percentage?: number;
 }
 
 export interface SkillCategory {
@@ -59,7 +59,24 @@ export interface TechTag {
   primary: boolean;
 }
 
+export interface DashboardScreenshot {
+  src: string;
+  title: string;
+  caption: string;
+  alt: string;
+}
+
 export interface Project {
+  color: string;
+  problem: string;
+  solutionApproach: string[];
+  findings: string[];
+  recommendation: string;
+  limitation: string;
+  implementation: string;
+  dataNote: string;
+  datasetUrl: string;
+  screenshots: DashboardScreenshot[];
   id: string;
   title: string;
   subtitle: string;

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f3f6fc"/>
+<rect x="0" y="0" width="215" height="900" rx="0" fill="#0a0e3d"/>
+<text x="29" y="53" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">ZH / ANALYTICS</text>
+<text x="29" y="86" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">PORTFOLIO LAB</text>
+<rect x="18" y="134" width="179" height="46" rx="9" fill="#c2410c"/>
+<text x="34" y="162" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Overview</text>
+<text x="34" y="222" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Performance</text>
+<text x="34" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Action Detail</text>
+<text x="27" y="766" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#93c5fd">SYNTHETIC DATA</text>
+<text x="27" y="800" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">Illustrative</text>
+<text x="27" y="822" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">dashboard. No client</text>
+<text x="27" y="844" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">data.</text>
+<text x="254" y="54" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#c2410c">MARKETING / DEMO CASE STUDY</text>
+<text x="254" y="99" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#0f172a">Marketing Funnel &amp; Efficiency</text>
+<text x="254" y="131" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#475569">Connect acquisition volume with efficiency</text>
+<rect x="1190" y="35" width="215" height="33" rx="16" fill="#e2e8f0"/>
+<text x="1205" y="57" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DEMO · SAMPLE DATA</text>
+<text x="254" y="170" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">01  Executive overview</text>
+<rect x="254" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="254" y="194" width="5" height="113" rx="2" fill="#c2410c"/>
+<text x="275" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Spend</text>
+<text x="275" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 500k</text>
+<rect x="543" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="543" y="194" width="5" height="113" rx="2" fill="#c2410c"/>
+<text x="564" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Attributed revenue</text>
+<text x="564" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 1.84m</text>
+<rect x="832" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="832" y="194" width="5" height="113" rx="2" fill="#c2410c"/>
+<text x="853" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">ROAS</text>
+<text x="853" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">3.68x</text>
+<rect x="1121" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="1121" y="194" width="5" height="113" rx="2" fill="#c2410c"/>
+<text x="1142" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Orders</text>
+<text x="1142" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">386</text>
+<rect x="254" y="331" width="714" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="280" y="369" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Spend by channel</text>
+<text x="280" y="396" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">PKR thousands</text>
+<line x1="314" y1="690.0" x2="943" y2="690.0" stroke="#e2e8f0"/>
+<text x="269" y="695.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">0</text>
+<line x1="314" y1="625.25" x2="943" y2="625.25" stroke="#e2e8f0"/>
+<text x="269" y="630.25" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">39</text>
+<line x1="314" y1="560.5" x2="943" y2="560.5" stroke="#e2e8f0"/>
+<text x="269" y="565.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">78</text>
+<line x1="314" y1="495.75" x2="943" y2="495.75" stroke="#e2e8f0"/>
+<text x="269" y="500.75" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">118</text>
+<line x1="314" y1="431.0" x2="943" y2="431.0" stroke="#e2e8f0"/>
+<text x="269" y="436.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">157</text>
+<rect x="333.76" y="458.75" width="57.2" height="231.24999999999997" rx="5" fill="#c2410c"/>
+<text x="333.76" y="449.75" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">140.0</text>
+<text x="329.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Search</text>
+<rect x="437.76" y="524.8214285714286" width="57.2" height="165.17857142857142" rx="5" fill="#c2410c"/>
+<text x="437.76" y="515.8214285714286" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">100.0</text>
+<text x="433.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Social</text>
+<rect x="541.76" y="640.4464285714286" width="57.2" height="49.55357142857142" rx="5" fill="#c2410c"/>
+<text x="541.76" y="631.4464285714286" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">30.0</text>
+<text x="537.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Email</text>
+<rect x="645.76" y="557.8571428571429" width="57.2" height="132.14285714285714" rx="5" fill="#c2410c"/>
+<text x="645.76" y="548.8571428571429" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">80.0</text>
+<text x="641.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Display</text>
+<rect x="749.76" y="590.8928571428571" width="57.2" height="99.10714285714285" rx="5" fill="#c2410c"/>
+<text x="749.76" y="581.8928571428571" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">60.0</text>
+<text x="745.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Affiliate</text>
+<rect x="853.76" y="541.3392857142858" width="57.2" height="148.66071428571428" rx="5" fill="#c2410c"/>
+<text x="853.76" y="532.3392857142858" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">90.0</text>
+<text x="849.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Video</text>
+<rect x="990" y="331" width="413" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="1015" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#c2410c">READ THE SIGNAL</text>
+<text x="1015" y="416" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">Blended sample ROAS is 3.68x</text>
+<text x="1015" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">across PKR 500k of spend.</text>
+<text x="1015" y="558" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">The sample records 386 orders</text>
+<text x="1015" y="587" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">from 5,220 leads: 7.4% lead-to-</text>
+<text x="1015" y="616" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">order conversion.</text>
+<rect x="254" y="765" width="1149" height="79" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="277" y="795" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#c2410c">ANALYST NOTE</text>
+<text x="277" y="823" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">The overview connects spend, attributed revenue and orders for one synthetic period.</text>
+<text x="254" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Zain Hassan  /  Demonstration only · Values calculated from the included sample records</text>
+<text x="1290" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#c2410c">VIEW 1 / 3</text>
+</svg>

@@ -2,18 +2,16 @@
 
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
-import TypewriterText from '@/components/ui/TypewriterText';
-import CountUp from '@/components/ui/CountUp';
 import { personalInfo } from '@/data/personal';
 import { scrollToSection } from '@/lib/utils';
 
 // Positions are relative to the phone-sized wrapper div, so they always
 // peek just outside the phone's own edges regardless of viewport width.
 const skillCards = [
-  { label: 'Data Analyst',       sublabel: 'Speciality', icon: '📊', position: 'top-[8%]    -right-[160px]' },
-  { label: 'SQL Developer',      sublabel: 'Also',       icon: '🗄️', position: 'top-[42%]   -right-[160px]' },
-  { label: 'Power BI Developer', sublabel: 'Also',       icon: '📈', position: 'bottom-[30%] -left-[160px]' },
-  { label: 'Python Analyst',     sublabel: '',           icon: '🐍', position: 'bottom-[12%] -left-[160px]' },
+  { label: 'Data Analyst',       sublabel: 'Speciality', icon: '📊', position: 'top-[8%]    -right-[55px] xl:-right-[85px]' },
+  { label: 'SQL Developer',      sublabel: 'Also',       icon: '🗄️', position: 'top-[42%]   -right-[55px] xl:-right-[85px]' },
+  { label: 'Power BI Developer', sublabel: 'Also',       icon: '📈', position: 'bottom-[30%] -left-[55px] xl:-left-[85px]' },
+  { label: 'Python Analyst',     sublabel: '',           icon: '🐍', position: 'bottom-[12%] -left-[55px] xl:-left-[85px]' },
 ];
 
 const container: Variants = {
@@ -54,8 +52,8 @@ export default function HeroSection() {
                   <path d="M1.5 5L3.8 7.5L8.5 2.5" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </span>
-              <span className="text-[#6FDA44] text-xs font-bold tracking-wide">Top Rated</span>
-              <span className="text-gray-400 text-xs font-medium">Seller on Upwork</span>
+              <span className="text-[#6FDA44] text-xs font-bold tracking-wide">Available</span>
+              <span className="text-gray-400 text-xs font-medium">for freelance & analytics roles</span>
             </span>
           </motion.div>
 
@@ -78,9 +76,9 @@ export default function HeroSection() {
 
           <motion.div
             variants={item}
-            className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-400 mb-5 sm:mb-6 h-8 sm:h-10"
+            className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-100 mb-5 sm:mb-6 min-h-8 sm:min-h-10"
           >
-            <TypewriterText texts={personalInfo.titles} />
+            {personalInfo.titles[0]}
           </motion.div>
 
           <motion.p
@@ -92,17 +90,17 @@ export default function HeroSection() {
 
           <motion.div variants={item} className="flex flex-wrap gap-3 sm:gap-4 mb-12 sm:mb-14">
             <button
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('services')}
               className="group bg-white text-gray-900 hover:bg-gray-100 font-semibold px-6 sm:px-7 py-3.5 rounded-full transition-all shadow-xl shadow-blue-900/30 hover:-translate-y-0.5 cursor-pointer flex items-center gap-2"
             >
-              View My Work
+              Explore Services
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </button>
             <button
               onClick={() => scrollToSection('contact')}
               className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 font-semibold px-6 sm:px-7 py-3.5 rounded-full transition-all backdrop-blur-sm cursor-pointer"
             >
-              Hire Me
+              Discuss Your Project
             </button>
           </motion.div>
 
@@ -111,11 +109,11 @@ export default function HeroSection() {
             variants={item}
             className="mx-auto max-w-fit rounded-3xl border border-white/15 bg-white/10 px-5 py-5 sm:px-6 sm:py-6 backdrop-blur-md shadow-2xl shadow-black/10"
           >
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 sm:gap-6 text-center justify-items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center justify-items-center">
               {personalInfo.stats.map((stat) => (
                 <div key={stat.label} className="min-w-[4.5rem]">
-                  <p className="text-2xl sm:text-3xl font-extrabold text-white">
-                    <CountUp value={stat.value} />
+                  <p className="text-xl sm:text-2xl font-extrabold text-white">
+                    {stat.value}
                   </p>
                   <p className="text-gray-300 text-xs sm:text-sm mt-0.5">{stat.label}</p>
                 </div>

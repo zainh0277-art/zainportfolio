@@ -1,23 +1,45 @@
-name: Deploy to Firebase
-
+name: Validate and deploy portfolio
 on:
+  pull_request:
   push:
     branches: [main]
-
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
       - run: npm ci
-
+      - run: npm run lint
+      - run: npm run typecheck
       - run: npm run build
-
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://zainportfolio-007.web.app' }}
+      - name: Install browser checks
+        run: npm install --no-save --package-lock=false playwright@1.58.2 && npx playwright install --with-deps chromium
+      - name: Check responsive layouts and contact form
+        run: |
+          python3 -m http.server 4173 --directory out &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node scripts/check-browser.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-static
+          path: out
       - name: Deploy to Firebase Hosting
-        run: npm run firebase-tools -- deploy --only hosting --token "${{ secrets.FIREBASE_TOKEN }}"
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 }}
+          channelId: live
+          projectId: zainportfolio-007

@@ -1,0 +1,55 @@
+{
+  "source": "Synthetic sample data created for a portfolio demonstration. Not client data.",
+  "project": "Credit & Collections Monitor",
+  "grain": "One record per account",
+  "records": [
+    {
+      "name": "Account A",
+      "invoiced": 220000,
+      "paid": 140000,
+      "days_overdue": 0,
+      "outstanding": 80000
+    },
+    {
+      "name": "Account B",
+      "invoiced": 180000,
+      "paid": 60000,
+      "days_overdue": 14,
+      "outstanding": 120000
+    },
+    {
+      "name": "Account C",
+      "invoiced": 300000,
+      "paid": 100000,
+      "days_overdue": 45,
+      "outstanding": 200000
+    },
+    {
+      "name": "Account D",
+      "invoiced": 160000,
+      "paid": 120000,
+      "days_overdue": 8,
+      "outstanding": 40000
+    },
+    {
+      "name": "Account E",
+      "invoiced": 250000,
+      "paid": 50000,
+      "days_overdue": 72,
+      "outstanding": 200000
+    },
+    {
+      "name": "Account F",
+      "invoiced": 140000,
+      "paid": 120000,
+      "days_overdue": 0,
+      "outstanding": 20000
+    }
+  ],
+  "method": [
+    "Reconcile invoiced and paid amounts at the account level.",
+    "Calculate outstanding = invoiced \u2212 paid and group balances by days overdue.",
+    "Order a review queue by overdue days and balance; retain current accounts separately."
+  ],
+  "limitations": "Synthetic account snapshot. Aging indicates collection priority, not a probability of default or a credit score."
+}
