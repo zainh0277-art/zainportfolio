@@ -28,7 +28,11 @@ import { chromium } from 'playwright';
       await page.goto('http://127.0.0.1:4173');
       await page.locator('#contact').scrollIntoViewIfNeeded();
       await page.waitForTimeout(1000);
-      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `Overflow at ${width}px`);
+      const overflow = await page.evaluate(() => ({
+        viewport: innerWidth, width: document.documentElement.scrollWidth,
+        elements: [...document.querySelectorAll('body *')].filter(el => { const box = el.getBoundingClientRect(); return box.width && (box.right > innerWidth + 1 || box.left < -1); }).slice(0, 12).map(el => ({ tag: el.tagName, className: el.className, right: el.getBoundingClientRect().right })),
+      }));
+      assert.ok(overflow.width <= overflow.viewport, `Overflow at ${width}px: ${JSON.stringify(overflow)}`);
       assert.equal(await page.locator('h1').count(), 1);
       assert.equal(await page.locator('form').getAttribute('method'), 'POST');
       assert.equal(await page.locator('form').getAttribute('action'), 'https://formsubmit.co/zainh0277@gmail.com');

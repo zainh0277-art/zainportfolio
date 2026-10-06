@@ -37,7 +37,7 @@ export default function ContactSection() {
   const whatsappUrl = `https://wa.me/${personalInfo.phone.replace(/\D/g, '')}?text=${encodeURIComponent("Hi Zain, I saw your portfolio and I'd like to discuss a project.")}`;
 
   return (
-    <section id="contact" className="py-24 bg-[#f8f9fc]">
+    <section id="contact" className="py-24 bg-[#f8f9fc] overflow-x-clip">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
           eyebrow="Get In Touch"
