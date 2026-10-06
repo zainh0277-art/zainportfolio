@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f3f6fc"/>
+<rect x="0" y="0" width="215" height="900" rx="0" fill="#0a0e3d"/>
+<text x="29" y="53" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">ZH / ANALYTICS</text>
+<text x="29" y="86" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">PORTFOLIO LAB</text>
+<text x="34" y="162" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Overview</text>
+<rect x="18" y="194" width="179" height="46" rx="9" fill="#0f766e"/>
+<text x="34" y="222" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Performance</text>
+<text x="34" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Action Detail</text>
+<text x="27" y="766" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#93c5fd">SYNTHETIC DATA</text>
+<text x="27" y="800" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">Illustrative</text>
+<text x="27" y="822" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">dashboard. No client</text>
+<text x="27" y="844" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">data.</text>
+<text x="254" y="54" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">AGRICULTURE / DEMO CASE STUDY</text>
+<text x="254" y="99" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#0f172a">Farm Cost &amp; Profitability</text>
+<text x="254" y="131" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#475569">Compare crop blocks on a per-acre basis</text>
+<rect x="1190" y="35" width="215" height="33" rx="16" fill="#e2e8f0"/>
+<text x="1205" y="57" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DEMO · SAMPLE DATA</text>
+<text x="254" y="170" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">02  Performance comparison</text>
+<rect x="254" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="254" y="194" width="5" height="113" rx="2" fill="#0f766e"/>
+<text x="275" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Area</text>
+<text x="275" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">50 acres</text>
+<rect x="543" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="543" y="194" width="5" height="113" rx="2" fill="#0f766e"/>
+<text x="564" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Revenue</text>
+<text x="564" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 8.39m</text>
+<rect x="832" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="832" y="194" width="5" height="113" rx="2" fill="#0f766e"/>
+<text x="853" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Recorded cost</text>
+<text x="853" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 6.51m</text>
+<rect x="1121" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="1121" y="194" width="5" height="113" rx="2" fill="#0f766e"/>
+<text x="1142" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Contribution</text>
+<text x="1142" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 1.88m</text>
+<rect x="254" y="331" width="714" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="280" y="369" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Contribution per acre</text>
+<text x="280" y="396" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">PKR thousands / acre</text>
+<text x="280" y="442.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Wheat A</text>
+<rect x="397" y="425.0" width="479" height="23" rx="5" fill="#f1f5f9"/>
+<rect x="397" y="425.0" width="287.7110389610389" height="23" rx="5" fill="#0f766e"/>
+<text x="893" y="443.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">37.0</text>
+<text x="280" y="492.6666666666667" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Wheat B</text>
+<rect x="397" y="475.6666666666667" width="479" height="23" rx="5" fill="#f1f5f9"/>
+<rect x="397" y="475.6666666666667" width="151.63149350649348" height="23" rx="5" fill="#0f766e"/>
+<text x="893" y="493.6666666666667" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">19.5</text>
+<text x="280" y="543.3333333333334" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Rice A</text>
+<rect x="397" y="526.3333333333334" width="479" height="23" rx="5" fill="#f1f5f9"/>
+<rect x="397" y="526.3333333333334" width="427.6785714285714" height="23" rx="5" fill="#0f766e"/>
+<text x="893" y="544.3333333333334" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">55.0</text>
+<text x="280" y="594.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Rice B</text>
+<rect x="397" y="577.0" width="479" height="23" rx="5" fill="#f1f5f9"/>
+<rect x="397" y="577.0" width="289.6550324675324" height="23" rx="5" fill="#0f766e"/>
+<text x="893" y="595.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">37.2</text>
+<text x="280" y="644.6666666666666" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Maize A</text>
+<rect x="397" y="627.6666666666666" width="479" height="23" rx="5" fill="#f1f5f9"/>
+<rect x="397" y="627.6666666666666" width="336.95887445887445" height="23" rx="5" fill="#0f766e"/>
+<text x="893" y="645.6666666666666" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">43.3</text>
+<text x="280" y="695.3333333333333" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Maize B</text>
+<rect x="397" y="678.3333333333333" width="479" height="23" rx="5" fill="#f1f5f9"/>
+<rect x="397" y="678.3333333333333" width="242.99918831168827" height="23" rx="5" fill="#0f766e"/>
+<text x="893" y="696.3333333333333" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="600" fill="#0f172a">31.2</text>
+<rect x="990" y="331" width="413" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="1015" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">INTERPRETATION</text>
+<text x="1015" y="416" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">Wheat B generates PKR 19.5k per</text>
+<text x="1015" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">acre, compared with PKR 37k for</text>
+<text x="1015" y="474" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">Wheat A.</text>
+<text x="1015" y="561" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Investigate the lower-performing</text>
+<text x="1015" y="590" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">wheat block using actual input,</text>
+<text x="1015" y="619" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">irrigation and soil records before</text>
+<text x="1015" y="648" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">changing crop allocation.</text>
+<rect x="254" y="765" width="1149" height="79" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="277" y="795" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#0f766e">ANALYST NOTE</text>
+<text x="277" y="823" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">Per-acre contribution provides a fairer comparison than total revenue alone.</text>
+<text x="254" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Zain Hassan  /  Demonstration only · Values calculated from the included sample records</text>
+<text x="1290" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">VIEW 2 / 3</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f3f6fc"/>
+<rect x="0" y="0" width="215" height="900" rx="0" fill="#0a0e3d"/>
+<text x="29" y="53" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">ZH / ANALYTICS</text>
+<text x="29" y="86" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">PORTFOLIO LAB</text>
+<rect x="18" y="134" width="179" height="46" rx="9" fill="#7c3aed"/>
+<text x="34" y="162" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Overview</text>
+<text x="34" y="222" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Performance</text>
+<text x="34" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Action Detail</text>
+<text x="27" y="766" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#93c5fd">SYNTHETIC DATA</text>
+<text x="27" y="800" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">Illustrative</text>
+<text x="27" y="822" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">dashboard. No client</text>
+<text x="27" y="844" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">data.</text>
+<text x="254" y="54" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c3aed">FINANCE / DEMO CASE STUDY</text>
+<text x="254" y="99" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#0f172a">Credit &amp; Collections Monitor</text>
+<text x="254" y="131" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#475569">Know which balances need attention</text>
+<rect x="1190" y="35" width="215" height="33" rx="16" fill="#e2e8f0"/>
+<text x="1205" y="57" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DEMO · SAMPLE DATA</text>
+<text x="254" y="170" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">01  Executive overview</text>
+<rect x="254" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="254" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="275" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Outstanding</text>
+<text x="275" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 660k</text>
+<rect x="543" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="543" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="564" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Overdue</text>
+<text x="564" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 560k</text>
+<rect x="832" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="832" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="853" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Over 30 days</text>
+<text x="853" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 400k</text>
+<rect x="1121" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="1121" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="1142" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Accounts</text>
+<text x="1142" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">6</text>
+<rect x="254" y="331" width="714" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="280" y="369" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Outstanding by account</text>
+<text x="280" y="396" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">PKR thousands</text>
+<line x1="314" y1="690.0" x2="943" y2="690.0" stroke="#e2e8f0"/>
+<text x="269" y="695.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">0</text>
+<line x1="314" y1="625.25" x2="943" y2="625.25" stroke="#e2e8f0"/>
+<text x="269" y="630.25" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">56</text>
+<line x1="314" y1="560.5" x2="943" y2="560.5" stroke="#e2e8f0"/>
+<text x="269" y="565.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">112</text>
+<line x1="314" y1="495.75" x2="943" y2="495.75" stroke="#e2e8f0"/>
+<text x="269" y="500.75" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">168</text>
+<line x1="314" y1="431.0" x2="943" y2="431.0" stroke="#e2e8f0"/>
+<text x="269" y="436.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">224</text>
+<rect x="333.76" y="597.5" width="57.2" height="92.49999999999999" rx="5" fill="#7c3aed"/>
+<text x="333.76" y="588.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">80.0</text>
+<text x="329.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Account A</text>
+<rect x="437.76" y="551.25" width="57.2" height="138.75" rx="5" fill="#7c3aed"/>
+<text x="437.76" y="542.25" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">120.0</text>
+<text x="433.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Account B</text>
+<rect x="541.76" y="458.75" width="57.2" height="231.24999999999997" rx="5" fill="#7c3aed"/>
+<text x="541.76" y="449.75" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">200.0</text>
+<text x="537.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Account C</text>
+<rect x="645.76" y="643.75" width="57.2" height="46.24999999999999" rx="5" fill="#7c3aed"/>
+<text x="645.76" y="634.75" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">40.0</text>
+<text x="641.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Account D</text>
+<rect x="749.76" y="458.75" width="57.2" height="231.24999999999997" rx="5" fill="#7c3aed"/>
+<text x="749.76" y="449.75" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">200.0</text>
+<text x="745.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Account E</text>
+<rect x="853.76" y="666.875" width="57.2" height="23.124999999999996" rx="5" fill="#7c3aed"/>
+<text x="853.76" y="657.875" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="600" fill="#0f172a">20.0</text>
+<text x="849.76" y="718" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Account F</text>
+<rect x="990" y="331" width="413" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="1015" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#7c3aed">READ THE SIGNAL</text>
+<text x="1015" y="416" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">Total outstanding is PKR 660k;</text>
+<text x="1015" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">overdue balances represent 84.8%</text>
+<text x="1015" y="474" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">of it.</text>
+<text x="1015" y="558" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">Balances more than 30 days</text>
+<text x="1015" y="587" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">overdue total PKR 400k across</text>
+<text x="1015" y="616" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#475569">two accounts.</text>
+<rect x="254" y="765" width="1149" height="79" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="277" y="795" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#7c3aed">ANALYST NOTE</text>
+<text x="277" y="823" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">The overview separates total outstanding from overdue credit using one account snapshot.</text>
+<text x="254" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Zain Hassan  /  Demonstration only · Values calculated from the included sample records</text>
+<text x="1290" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c3aed">VIEW 1 / 3</text>
+</svg>

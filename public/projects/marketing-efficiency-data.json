@@ -1,0 +1,55 @@
+{
+  "source": "Synthetic sample data created for a portfolio demonstration. Not client data.",
+  "project": "Marketing Funnel & Efficiency",
+  "grain": "One record per channel",
+  "records": [
+    {
+      "name": "Search",
+      "spend": 140000,
+      "leads": 1000,
+      "orders": 110,
+      "revenue": 550000
+    },
+    {
+      "name": "Social",
+      "spend": 100000,
+      "leads": 1400,
+      "orders": 56,
+      "revenue": 280000
+    },
+    {
+      "name": "Email",
+      "spend": 30000,
+      "leads": 500,
+      "orders": 90,
+      "revenue": 360000
+    },
+    {
+      "name": "Display",
+      "spend": 80000,
+      "leads": 900,
+      "orders": 27,
+      "revenue": 135000
+    },
+    {
+      "name": "Affiliate",
+      "spend": 60000,
+      "leads": 420,
+      "orders": 63,
+      "revenue": 315000
+    },
+    {
+      "name": "Video",
+      "spend": 90000,
+      "leads": 1000,
+      "orders": 40,
+      "revenue": 200000
+    }
+  ],
+  "method": [
+    "Aggregate spend, leads, attributed orders and attributed revenue for the same sample period.",
+    "Calculate ROAS = attributed revenue / spend and lead-to-order rate = orders / leads.",
+    "Compare channel efficiency, noting attribution limits before proposing an experiment."
+  ],
+  "limitations": "Synthetic aggregates with simple attribution. ROAS is revenue divided by spend, not profit, incremental lift or a causal measure."
+}

@@ -6,7 +6,7 @@
 - Configure the Firebase service-account secret described in README.
 - Activate FormSubmit from the destination inbox, then confirm a second test arrives and replies route correctly.
 - Check the existing Google Drive resume is publicly downloadable and up to date.
-- Existing placeholder projects remain unchanged at the owner's request. Replace them with verified work before promoting the portfolio widely.
+- Five sample-data case studies now replace the placeholders. Keep the Demo labels until actual project evidence is available.
 
 ## Off-page work requiring account access
 

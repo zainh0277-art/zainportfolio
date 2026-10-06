@@ -1,0 +1,67 @@
+{
+  "source": "Synthetic sample data created for a portfolio demonstration. Not client data.",
+  "project": "Farm Cost & Profitability",
+  "grain": "One record per crop block",
+  "records": [
+    {
+      "name": "Wheat A",
+      "acres": 10,
+      "yield_tonnes": 15,
+      "price_per_tonne": 90000,
+      "cost": 980000,
+      "revenue": 1350000,
+      "profit": 370000
+    },
+    {
+      "name": "Wheat B",
+      "acres": 8,
+      "yield_tonnes": 10.4,
+      "price_per_tonne": 90000,
+      "cost": 780000,
+      "revenue": 936000,
+      "profit": 156000
+    },
+    {
+      "name": "Rice A",
+      "acres": 10,
+      "yield_tonnes": 20,
+      "price_per_tonne": 120000,
+      "cost": 1850000,
+      "revenue": 2400000,
+      "profit": 550000
+    },
+    {
+      "name": "Rice B",
+      "acres": 8,
+      "yield_tonnes": 14.4,
+      "price_per_tonne": 120000,
+      "cost": 1430000,
+      "revenue": 1728000,
+      "profit": 298000
+    },
+    {
+      "name": "Maize A",
+      "acres": 6,
+      "yield_tonnes": 15,
+      "price_per_tonne": 60000,
+      "cost": 640000,
+      "revenue": 900000,
+      "profit": 260000
+    },
+    {
+      "name": "Maize B",
+      "acres": 8,
+      "yield_tonnes": 18,
+      "price_per_tonne": 60000,
+      "cost": 830000,
+      "revenue": 1080000,
+      "profit": 250000
+    }
+  ],
+  "method": [
+    "Keep one record per crop block with area, harvested tonnes, selling price and recorded cost.",
+    "Calculate revenue = tonnes \u00d7 price, and contribution = revenue \u2212 recorded cost.",
+    "Normalize contribution by acres and compare blocks before investigating differences."
+  ],
+  "limitations": "Synthetic single-season blocks. Contribution uses only recorded costs; weather, soil, labor allocation and market uncertainty are not modeled."
+}

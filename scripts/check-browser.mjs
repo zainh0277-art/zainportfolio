@@ -51,6 +51,41 @@ import { chromium } from 'playwright';
       }
       console.log(`PASS: ${width}x${height} layout, form validation and navigation`);
     }
+    for (const width of [375, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto('http://127.0.0.1:4173');
+      const cards = page.locator('#projects button[aria-label^="Read "]');
+      assert.equal(await cards.count(), 5);
+      for (let index = 0; index < 5; index++) {
+        const card = cards.nth(index);
+        await card.click();
+        const dialog = page.getByRole('dialog');
+        await dialog.waitFor({ state: 'visible' });
+        assert.equal(await dialog.getByRole('heading', { name: 'Problem statement' }).count(), 1);
+        assert.equal(await dialog.getByRole('heading', { name: 'Solution approach' }).count(), 1);
+        for (const name of ['1. Overview', '2. Performance', '3. Action Detail']) {
+          const view = dialog.getByRole('button', { name, exact: true });
+          await view.click();
+          assert.equal(await view.getAttribute('aria-pressed'), 'true');
+          assert.equal(await dialog.locator('figure img').evaluate(async img => { await img.decode(); return img.naturalWidth > 0; }), true);
+          assert.ok((await dialog.locator('figcaption').innerText()).length > 50);
+        }
+        assert.equal(await dialog.evaluate(el => el.scrollWidth <= el.clientWidth), true, `Dialog overflow at ${width}px`);
+        const dataset = await dialog.getByRole('link', { name: 'Download sample data (JSON)' }).getAttribute('href');
+        const response = await page.request.get(`http://127.0.0.1:4173${dataset}`);
+        assert.equal(response.ok(), true);
+        assert.equal((await response.json()).records.length, 6);
+        await page.keyboard.press('Escape');
+        await dialog.waitFor({ state: 'detached' });
+        assert.equal(await card.evaluate(el => el === document.activeElement), true, 'Restore focus to project card');
+      }
+      await page.locator('#projects').getByRole('button', { name: 'Agriculture', exact: false }).click();
+      await page.waitForFunction(() => document.querySelectorAll('#projects button[aria-label^="Read "]').length === 1);
+      assert.equal(await cards.count(), 1);
+      await page.locator('#projects').getByRole('button', { name: 'All', exact: false }).click();
+      assert.equal(await cards.count(), 5);
+      console.log(`PASS: ${width}px five project dialogs, 15 images, captions, data downloads, filters and focus restoration`);
+    }
     assert.deepEqual(errors, []);
     // Deliberately do not send external messages. Inbox delivery is a separate launch gate.
   } finally { await browser.close(); }

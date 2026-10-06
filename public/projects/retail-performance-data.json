@@ -1,0 +1,49 @@
+{
+  "source": "Synthetic sample data created for a portfolio demonstration. Not client data.",
+  "project": "Retail Revenue & Margin",
+  "grain": "One record per month",
+  "records": [
+    {
+      "name": "Jan",
+      "revenue": 420000,
+      "cost": 315000,
+      "orders": 140
+    },
+    {
+      "name": "Feb",
+      "revenue": 460000,
+      "cost": 340000,
+      "orders": 150
+    },
+    {
+      "name": "Mar",
+      "revenue": 510000,
+      "cost": 370000,
+      "orders": 170
+    },
+    {
+      "name": "Apr",
+      "revenue": 570000,
+      "cost": 420000,
+      "orders": 190
+    },
+    {
+      "name": "May",
+      "revenue": 610000,
+      "cost": 470000,
+      "orders": 205
+    },
+    {
+      "name": "Jun",
+      "revenue": 680000,
+      "cost": 550000,
+      "orders": 230
+    }
+  ],
+  "method": [
+    "Aggregate revenue, cost of goods and order counts at the monthly grain.",
+    "Calculate gross profit = revenue \u2212 cost; gross margin = gross profit / revenue.",
+    "Compare month-to-month revenue and margin, then flag margin compression for investigation."
+  ],
+  "limitations": "Six synthetic monthly aggregates; gross profit excludes operating expenses, tax and returns. The data cannot establish why costs changed."
+}

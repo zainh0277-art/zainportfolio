@@ -6,7 +6,7 @@ Portfolio for freelance data work and analytics opportunities. Built with Next.j
 
 SQL and relational databases, Power BI dashboards, Excel reporting, and C# data applications. Studying BS Business Data Analytics at UET Lahore.
 
-The existing blue/navy theme is preserved. Project content is unchanged pending the owner's project evidence and approval.
+The existing blue/navy theme is preserved. The Portfolio Lab contains five clearly labelled demo case studies with synthetic sample data, not commissioned client work. Each has three consistent dashboard views, a problem statement, approach, findings, recommendation and limitations.
 
 ## Development
 
@@ -45,7 +45,14 @@ See [Launch and discovery checklist](docs/launch-checklist.md) for remaining own
 - `src/data/personal.ts`: contact details and introduction
 - `src/data/skills.ts`: skill categories without arbitrary percentages
 - `src/components/sections/ServicesSection.tsx`: services and deliverables
-- `src/data/projects.ts`: existing project data (unchanged)
+- `src/data/projects.ts`: typed project registry
+- `src/data/demo-projects.json`: generated case study content
+- `public/projects/`: 15 dashboard SVGs and five downloadable sample datasets
+- `scripts/generate-demo-projects.py`: reproducible source for all demo content and visuals
 - `src/lib/site.ts`: canonical origin and search description
 
 Contact: [zainh0277@gmail.com](mailto:zainh0277@gmail.com) · [LinkedIn](https://www.linkedin.com/in/zain-hassan-13859b371/) · [GitHub](https://github.com/zainh0277-art)
+
+## Rebuild demo dashboards
+
+Run `python3 scripts/generate-demo-projects.py` from the repository, then build normally. The generator uses only Python's standard library. Every view for a given project uses the same six records. Amounts and ratios are derived from those records, not claimed client outcomes. Views are static SVGs; the accessible portfolio gallery provides view switching and full-size inspection. No live Power BI report or paid client result is implied.

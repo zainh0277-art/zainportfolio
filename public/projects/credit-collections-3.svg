@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#f3f6fc"/>
+<rect x="0" y="0" width="215" height="900" rx="0" fill="#0a0e3d"/>
+<text x="29" y="53" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">ZH / ANALYTICS</text>
+<text x="29" y="86" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">PORTFOLIO LAB</text>
+<text x="34" y="162" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Overview</text>
+<text x="34" y="222" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#b8c4dc">Performance</text>
+<rect x="18" y="254" width="179" height="46" rx="9" fill="#7c3aed"/>
+<text x="34" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Action Detail</text>
+<text x="27" y="766" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#93c5fd">SYNTHETIC DATA</text>
+<text x="27" y="800" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">Illustrative</text>
+<text x="27" y="822" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">dashboard. No client</text>
+<text x="27" y="844" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#b8c4dc">data.</text>
+<text x="254" y="54" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c3aed">FINANCE / DEMO CASE STUDY</text>
+<text x="254" y="99" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="700" fill="#0f172a">Credit &amp; Collections Monitor</text>
+<text x="254" y="131" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#475569">Know which balances need attention</text>
+<rect x="1190" y="35" width="215" height="33" rx="16" fill="#e2e8f0"/>
+<text x="1205" y="57" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#334155">DEMO · SAMPLE DATA</text>
+<text x="254" y="170" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">03  Decision support detail</text>
+<rect x="254" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="254" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="275" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Outstanding</text>
+<text x="275" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 660k</text>
+<rect x="543" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="543" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="564" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Overdue</text>
+<text x="564" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 560k</text>
+<rect x="832" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="832" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="853" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Over 30 days</text>
+<text x="853" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">PKR 400k</text>
+<rect x="1121" y="194" width="269" height="113" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<rect x="1121" y="194" width="5" height="113" rx="2" fill="#7c3aed"/>
+<text x="1142" y="227" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#475569">Accounts</text>
+<text x="1142" y="272" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">6</text>
+<rect x="254" y="331" width="1149" height="412" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="280" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">Detail behind the decision</text>
+<rect x="271" y="395" width="1114" height="42" rx="7" fill="#eef2ff"/>
+<text x="280" y="422" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">Account</text>
+<text x="520" y="422" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">Outstanding</text>
+<text x="810" y="422" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">Days overdue</text>
+<text x="1060" y="422" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="600" fill="#334155">Review status</text>
+<text x="280" y="477" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Account E</text>
+<text x="520" y="477" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">PKR 200k</text>
+<text x="810" y="477" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">72</text>
+<text x="1060" y="477" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Priority review</text>
+<line x1="280" y1="490" x2="1375" y2="490" stroke="#e2e8f0"/>
+<text x="280" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Account C</text>
+<text x="520" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">PKR 200k</text>
+<text x="810" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">45</text>
+<text x="1060" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Priority review</text>
+<line x1="280" y1="533" x2="1375" y2="533" stroke="#e2e8f0"/>
+<text x="280" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Account B</text>
+<text x="520" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">PKR 120k</text>
+<text x="810" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">14</text>
+<text x="1060" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Follow up</text>
+<line x1="280" y1="576" x2="1375" y2="576" stroke="#e2e8f0"/>
+<text x="280" y="606" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Account D</text>
+<text x="520" y="606" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">PKR 40k</text>
+<text x="810" y="606" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">8</text>
+<text x="1060" y="606" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Follow up</text>
+<line x1="280" y1="619" x2="1375" y2="619" stroke="#e2e8f0"/>
+<text x="280" y="649" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Account A</text>
+<text x="520" y="649" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">PKR 80k</text>
+<text x="810" y="649" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">0</text>
+<text x="1060" y="649" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Current</text>
+<line x1="280" y1="662" x2="1375" y2="662" stroke="#e2e8f0"/>
+<text x="280" y="692" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Account F</text>
+<text x="520" y="692" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">PKR 20k</text>
+<text x="810" y="692" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">0</text>
+<text x="1060" y="692" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#0f172a">Current</text>
+<rect x="254" y="765" width="1149" height="79" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="277" y="795" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#7c3aed">ANALYST NOTE</text>
+<text x="277" y="823" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#475569">The action view orders accounts by overdue days for human review, without assigning a credit score.</text>
+<text x="254" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" fill="#475569">Zain Hassan  /  Demonstration only · Values calculated from the included sample records</text>
+<text x="1290" y="878" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#7c3aed">VIEW 3 / 3</text>
+</svg>

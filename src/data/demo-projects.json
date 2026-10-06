@@ -1,0 +1,282 @@
+[
+  {
+    "id": "retail-performance",
+    "title": "Retail Revenue & Margin",
+    "category": "Retail",
+    "color": "#2563eb",
+    "subtitle": "Revenue quality, not just sales volume",
+    "description": "Compare sales growth with gross margin to identify where a stronger top line may hide rising costs.",
+    "problem": "A retailer sees sales increasing but cannot tell whether additional orders are producing stronger margins. Monthly sales and costs need to be compared on the same basis.",
+    "solutionApproach": [
+      "Aggregate revenue, cost of goods and order counts at the monthly grain.",
+      "Calculate gross profit = revenue \u2212 cost; gross margin = gross profit / revenue.",
+      "Compare month-to-month revenue and margin, then flag margin compression for investigation."
+    ],
+    "findings": [
+      "Total sample revenue is PKR 3.25m with a weighted gross margin of 24.2%.",
+      "June revenue is 61.9% above January, but gross margin falls from 25.0% to 19.1%.",
+      "June gross profit is PKR 130k; May is PKR 140k despite lower revenue."
+    ],
+    "recommendation": "Review June purchasing costs, discounts and product mix before treating higher sales as better performance.",
+    "limitation": "Six synthetic monthly aggregates; gross profit excludes operating expenses, tax and returns. The data cannot establish why costs changed.",
+    "flag": "",
+    "stack": [
+      "KPI Analysis",
+      "Dashboard Design",
+      "Sample Data"
+    ],
+    "caseStudy": "A retailer sees sales increasing but cannot tell whether additional orders are producing stronger margins. Monthly sales and costs need to be compared on the same basis.",
+    "highlights": [
+      "Total sample revenue is PKR 3.25m with a weighted gross margin of 24.2%.",
+      "June revenue is 61.9% above January, but gross margin falls from 25.0% to 19.1%.",
+      "June gross profit is PKR 130k; May is PKR 140k despite lower revenue."
+    ],
+    "datasetUrl": "/projects/retail-performance-data.json",
+    "dataNote": "Demo \u00b7 Sample Data \u2014 synthetic records; not commissioned client work.",
+    "implementation": "A reproducible dashboard concept with three static views, calculated from six included synthetic records. The portfolio gallery is interactive; the dashboard images are not a live BI report.",
+    "screenshots": [
+      {
+        "src": "/projects/retail-performance-1.svg",
+        "title": "Overview",
+        "caption": "Revenue grows across six months; the overview pairs volume with gross profit.",
+        "alt": "Retail Revenue & Margin \u2014 Overview. Revenue grows across six months; the overview pairs volume with gross profit."
+      },
+      {
+        "src": "/projects/retail-performance-2.svg",
+        "title": "Performance",
+        "caption": "The margin view highlights compression in May and June despite higher sales.",
+        "alt": "Retail Revenue & Margin \u2014 Performance. The margin view highlights compression in May and June despite higher sales."
+      },
+      {
+        "src": "/projects/retail-performance-3.svg",
+        "title": "Action Detail",
+        "caption": "The monthly detail makes the June profit decline visible and supports a cost review.",
+        "alt": "Retail Revenue & Margin \u2014 Action Detail. The monthly detail makes the June profit decline visible and supports a cost review."
+      }
+    ]
+  },
+  {
+    "id": "farm-profitability",
+    "title": "Farm Cost & Profitability",
+    "category": "Agriculture",
+    "color": "#0f766e",
+    "subtitle": "Compare crop blocks on a per-acre basis",
+    "description": "A farm dashboard concept connecting crop revenue, production cost and contribution per acre.",
+    "problem": "Comparing crop revenue alone can favor larger or more expensive blocks. A farm needs a consistent way to compare recorded costs and contribution per acre.",
+    "solutionApproach": [
+      "Keep one record per crop block with area, harvested tonnes, selling price and recorded cost.",
+      "Calculate revenue = tonnes \u00d7 price, and contribution = revenue \u2212 recorded cost.",
+      "Normalize contribution by acres and compare blocks before investigating differences."
+    ],
+    "findings": [
+      "The sample covers 50 acres with revenue of PKR 8.39m and contribution of PKR 1.88m.",
+      "Rice A generates PKR 55k contribution per acre, the highest sample block.",
+      "Wheat B generates PKR 19.5k per acre, compared with PKR 37k for Wheat A."
+    ],
+    "recommendation": "Investigate the lower-performing wheat block using actual input, irrigation and soil records before changing crop allocation.",
+    "limitation": "Synthetic single-season blocks. Contribution uses only recorded costs; weather, soil, labor allocation and market uncertainty are not modeled.",
+    "flag": "",
+    "stack": [
+      "KPI Analysis",
+      "Dashboard Design",
+      "Sample Data"
+    ],
+    "caseStudy": "Comparing crop revenue alone can favor larger or more expensive blocks. A farm needs a consistent way to compare recorded costs and contribution per acre.",
+    "highlights": [
+      "The sample covers 50 acres with revenue of PKR 8.39m and contribution of PKR 1.88m.",
+      "Rice A generates PKR 55k contribution per acre, the highest sample block.",
+      "Wheat B generates PKR 19.5k per acre, compared with PKR 37k for Wheat A."
+    ],
+    "datasetUrl": "/projects/farm-profitability-data.json",
+    "dataNote": "Demo \u00b7 Sample Data \u2014 synthetic records; not commissioned client work.",
+    "implementation": "A reproducible dashboard concept with three static views, calculated from six included synthetic records. The portfolio gallery is interactive; the dashboard images are not a live BI report.",
+    "screenshots": [
+      {
+        "src": "/projects/farm-profitability-1.svg",
+        "title": "Overview",
+        "caption": "The overview summarizes the same six crop blocks and their recorded costs.",
+        "alt": "Farm Cost & Profitability \u2014 Overview. The overview summarizes the same six crop blocks and their recorded costs."
+      },
+      {
+        "src": "/projects/farm-profitability-2.svg",
+        "title": "Performance",
+        "caption": "Per-acre contribution provides a fairer comparison than total revenue alone.",
+        "alt": "Farm Cost & Profitability \u2014 Performance. Per-acre contribution provides a fairer comparison than total revenue alone."
+      },
+      {
+        "src": "/projects/farm-profitability-3.svg",
+        "title": "Action Detail",
+        "caption": "Block-level detail identifies questions for a farm cost review; it is not a yield forecast.",
+        "alt": "Farm Cost & Profitability \u2014 Action Detail. Block-level detail identifies questions for a farm cost review; it is not a yield forecast."
+      }
+    ]
+  },
+  {
+    "id": "credit-collections",
+    "title": "Credit & Collections Monitor",
+    "category": "Finance",
+    "color": "#7c3aed",
+    "subtitle": "Know which balances need attention",
+    "description": "A collections dashboard concept with outstanding balances, aging buckets and a transparent review queue.",
+    "problem": "A small business needs to distinguish current balances from overdue credit and decide which accounts deserve a follow-up first.",
+    "solutionApproach": [
+      "Reconcile invoiced and paid amounts at the account level.",
+      "Calculate outstanding = invoiced \u2212 paid and group balances by days overdue.",
+      "Order a review queue by overdue days and balance; retain current accounts separately."
+    ],
+    "findings": [
+      "Total outstanding is PKR 660k; overdue balances represent 84.8% of it.",
+      "Balances more than 30 days overdue total PKR 400k across two accounts.",
+      "Accounts C and E each owe PKR 200k; E has the longer overdue period at 72 days."
+    ],
+    "recommendation": "Start a manual follow-up with the two oldest large balances, then verify payment commitments and disputes.",
+    "limitation": "Synthetic account snapshot. Aging indicates collection priority, not a probability of default or a credit score.",
+    "flag": "",
+    "stack": [
+      "KPI Analysis",
+      "Dashboard Design",
+      "Sample Data"
+    ],
+    "caseStudy": "A small business needs to distinguish current balances from overdue credit and decide which accounts deserve a follow-up first.",
+    "highlights": [
+      "Total outstanding is PKR 660k; overdue balances represent 84.8% of it.",
+      "Balances more than 30 days overdue total PKR 400k across two accounts.",
+      "Accounts C and E each owe PKR 200k; E has the longer overdue period at 72 days."
+    ],
+    "datasetUrl": "/projects/credit-collections-data.json",
+    "dataNote": "Demo \u00b7 Sample Data \u2014 synthetic records; not commissioned client work.",
+    "implementation": "A reproducible dashboard concept with three static views, calculated from six included synthetic records. The portfolio gallery is interactive; the dashboard images are not a live BI report.",
+    "screenshots": [
+      {
+        "src": "/projects/credit-collections-1.svg",
+        "title": "Overview",
+        "caption": "The overview separates total outstanding from overdue credit using one account snapshot.",
+        "alt": "Credit & Collections Monitor \u2014 Overview. The overview separates total outstanding from overdue credit using one account snapshot."
+      },
+      {
+        "src": "/projects/credit-collections-2.svg",
+        "title": "Performance",
+        "caption": "Aging buckets reveal PKR 400k more than 30 days overdue.",
+        "alt": "Credit & Collections Monitor \u2014 Performance. Aging buckets reveal PKR 400k more than 30 days overdue."
+      },
+      {
+        "src": "/projects/credit-collections-3.svg",
+        "title": "Action Detail",
+        "caption": "The action view orders accounts by overdue days for human review, without assigning a credit score.",
+        "alt": "Credit & Collections Monitor \u2014 Action Detail. The action view orders accounts by overdue days for human review, without assigning a credit score."
+      }
+    ]
+  },
+  {
+    "id": "inventory-planning",
+    "title": "Inventory & Reorder Planning",
+    "category": "Operations",
+    "color": "#0284c7",
+    "subtitle": "Balance availability with stock investment",
+    "description": "Compare available stock with demand during supplier lead time and surface replenishment gaps.",
+    "problem": "A stock manager cannot judge availability from unit counts alone because SKUs have different demand rates and supplier lead times.",
+    "solutionApproach": [
+      "Use one synthetic SKU record with stock, daily demand, lead time and unit cost.",
+      "Compute days of cover = stock / daily demand and lead-time demand = daily demand \u00d7 lead days.",
+      "Flag positive gaps between lead-time demand and available stock; review slow-moving items separately."
+    ],
+    "findings": [
+      "3 of 6 SKUs have stock below modeled lead-time demand.",
+      "The combined replenishment gap is 137 units; SKU-101 accounts for 80 units.",
+      "SKU-104 holds 60 days of cover versus a 14-day supplier lead time."
+    ],
+    "recommendation": "Review open purchase orders for the three flagged SKUs before placing new orders; investigate excess cover on SKU-104.",
+    "limitation": "Constant synthetic demand, no safety stock, seasonality or open orders. Gaps are review signals, not automatic purchase quantities.",
+    "flag": "",
+    "stack": [
+      "KPI Analysis",
+      "Dashboard Design",
+      "Sample Data"
+    ],
+    "caseStudy": "A stock manager cannot judge availability from unit counts alone because SKUs have different demand rates and supplier lead times.",
+    "highlights": [
+      "3 of 6 SKUs have stock below modeled lead-time demand.",
+      "The combined replenishment gap is 137 units; SKU-101 accounts for 80 units.",
+      "SKU-104 holds 60 days of cover versus a 14-day supplier lead time."
+    ],
+    "datasetUrl": "/projects/inventory-planning-data.json",
+    "dataNote": "Demo \u00b7 Sample Data \u2014 synthetic records; not commissioned client work.",
+    "implementation": "A reproducible dashboard concept with three static views, calculated from six included synthetic records. The portfolio gallery is interactive; the dashboard images are not a live BI report.",
+    "screenshots": [
+      {
+        "src": "/projects/inventory-planning-1.svg",
+        "title": "Overview",
+        "caption": "Stock value and availability are calculated from the same six-SKU snapshot.",
+        "alt": "Inventory & Reorder Planning \u2014 Overview. Stock value and availability are calculated from the same six-SKU snapshot."
+      },
+      {
+        "src": "/projects/inventory-planning-2.svg",
+        "title": "Performance",
+        "caption": "Days of cover helps compare items with different demand rates.",
+        "alt": "Inventory & Reorder Planning \u2014 Performance. Days of cover helps compare items with different demand rates."
+      },
+      {
+        "src": "/projects/inventory-planning-3.svg",
+        "title": "Action Detail",
+        "caption": "The replenishment queue shows gaps against lead-time demand and requires an open-order check.",
+        "alt": "Inventory & Reorder Planning \u2014 Action Detail. The replenishment queue shows gaps against lead-time demand and requires an open-order check."
+      }
+    ]
+  },
+  {
+    "id": "marketing-efficiency",
+    "title": "Marketing Funnel & Efficiency",
+    "category": "Marketing",
+    "color": "#c2410c",
+    "subtitle": "Connect acquisition volume with efficiency",
+    "description": "A channel-level dashboard concept comparing marketing spend, lead conversion and attributed revenue.",
+    "problem": "A marketing team sees many leads but needs to compare channel efficiency without confusing lead volume with profitable customer acquisition.",
+    "solutionApproach": [
+      "Aggregate spend, leads, attributed orders and attributed revenue for the same sample period.",
+      "Calculate ROAS = attributed revenue / spend and lead-to-order rate = orders / leads.",
+      "Compare channel efficiency, noting attribution limits before proposing an experiment."
+    ],
+    "findings": [
+      "Blended sample ROAS is 3.68x across PKR 500k of spend.",
+      "The sample records 386 orders from 5,220 leads: 7.4% lead-to-order conversion.",
+      "Email has 12.00x ROAS, while Display has 1.69x; channel intent and attribution differ."
+    ],
+    "recommendation": "Investigate the Display funnel and test a small budget change with controlled measurement instead of assuming ROAS proves causation.",
+    "limitation": "Synthetic aggregates with simple attribution. ROAS is revenue divided by spend, not profit, incremental lift or a causal measure.",
+    "flag": "",
+    "stack": [
+      "KPI Analysis",
+      "Dashboard Design",
+      "Sample Data"
+    ],
+    "caseStudy": "A marketing team sees many leads but needs to compare channel efficiency without confusing lead volume with profitable customer acquisition.",
+    "highlights": [
+      "Blended sample ROAS is 3.68x across PKR 500k of spend.",
+      "The sample records 386 orders from 5,220 leads: 7.4% lead-to-order conversion.",
+      "Email has 12.00x ROAS, while Display has 1.69x; channel intent and attribution differ."
+    ],
+    "datasetUrl": "/projects/marketing-efficiency-data.json",
+    "dataNote": "Demo \u00b7 Sample Data \u2014 synthetic records; not commissioned client work.",
+    "implementation": "A reproducible dashboard concept with three static views, calculated from six included synthetic records. The portfolio gallery is interactive; the dashboard images are not a live BI report.",
+    "screenshots": [
+      {
+        "src": "/projects/marketing-efficiency-1.svg",
+        "title": "Overview",
+        "caption": "The overview connects spend, attributed revenue and orders for one synthetic period.",
+        "alt": "Marketing Funnel & Efficiency \u2014 Overview. The overview connects spend, attributed revenue and orders for one synthetic period."
+      },
+      {
+        "src": "/projects/marketing-efficiency-2.svg",
+        "title": "Performance",
+        "caption": "Channel ROAS varies widely; the comparison is descriptive rather than causal.",
+        "alt": "Marketing Funnel & Efficiency \u2014 Performance. Channel ROAS varies widely; the comparison is descriptive rather than causal."
+      },
+      {
+        "src": "/projects/marketing-efficiency-3.svg",
+        "title": "Action Detail",
+        "caption": "Funnel detail shows conversion and return together so lead volume is not the only decision metric.",
+        "alt": "Marketing Funnel & Efficiency \u2014 Action Detail. Funnel detail shows conversion and return together so lead volume is not the only decision metric."
+      }
+    ]
+  }
+]
