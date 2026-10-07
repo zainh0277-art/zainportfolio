@@ -7,6 +7,7 @@ const title = 'Zain Hassan | Data Analyst — SQL & Power BI';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl), title, description: siteDescription,
   alternates: { canonical: '/' },
+  verification: { google: 'U0BFkYiNYrbn4TUABVqfP0Fej1cthlgtL4IbyOpaYRI' },
   authors: [{ name: personalInfo.name }],
   robots: { index: true, follow: true },
   openGraph: { title, description: siteDescription, url: siteUrl, siteName: 'Zain Hassan', type: 'website', locale: 'en_US', images: [{ url: '/social-preview.png', width: 1200, height: 630, alt: 'Zain Hassan — SQL, Power BI and business data analytics' }] },
