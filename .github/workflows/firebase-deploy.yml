@@ -36,8 +36,21 @@ jobs:
         with:
           name: portfolio-static
           path: out
+  deploy:
+    name: Deploy to Firebase Hosting
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: portfolio-static
+          path: out
       - name: Deploy to Firebase Hosting
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 }}
         run: |
@@ -52,7 +65,7 @@ jobs:
           elif printf '%s' "$FIREBASE_SERVICE_ACCOUNT" | base64 --decode | jq -e . >/dev/null 2>&1; then
             printf '%s' "$FIREBASE_SERVICE_ACCOUNT" | base64 --decode > "$CREDENTIALS_PATH"
           else
-            echo "FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 must be valid JSON or base64-encoded JSON."
+            echo "::error::Invalid Firebase credential. Replace repository secret FIREBASE_SERVICE_ACCOUNT_ZAINPORTFOLIO_007 with the complete downloaded service-account JSON file contents, including both braces. Do not paste a filename, Firebase web config, or only the private key."
             exit 1
           fi
           export GOOGLE_APPLICATION_CREDENTIALS="$CREDENTIALS_PATH"

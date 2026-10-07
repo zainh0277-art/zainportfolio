@@ -77,12 +77,15 @@ import { chromium } from 'playwright';
         assert.equal((await response.json()).records.length, 6);
         await page.keyboard.press('Escape');
         await dialog.waitFor({ state: 'detached' });
+        // React effect cleanup can run after the dialog has detached.
+        await page.waitForFunction(el => el === document.activeElement, await card.elementHandle(), { timeout: 5000 });
         assert.equal(await card.evaluate(el => el === document.activeElement), true, 'Restore focus to project card');
       }
       await page.locator('#projects').getByRole('button', { name: 'Agriculture', exact: false }).click();
       await page.waitForFunction(() => document.querySelectorAll('#projects button[aria-label^="Read "]').length === 1);
       assert.equal(await cards.count(), 1);
       await page.locator('#projects').getByRole('button', { name: 'All', exact: false }).click();
+      await page.waitForFunction(() => document.querySelectorAll('#projects button[aria-label^="Read "]').length === 5);
       assert.equal(await cards.count(), 5);
       console.log(`PASS: ${width}px five project dialogs, 15 images, captions, data downloads, filters and focus restoration`);
     }
