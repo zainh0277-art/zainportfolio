@@ -1,5 +1,6 @@
 'use client';
 
+import type { MouseEvent } from 'react';
 import Image from 'next/image';
 import type { Project } from '@/types';
 
@@ -12,7 +13,10 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
   return (
     <button
       type="button"
-      onClick={() => onSelect(project)}
+      onClick={(event: MouseEvent<HTMLButtonElement>) => {
+        event.currentTarget.focus();
+        onSelect(project);
+      }}
       aria-label={`Read ${project.title} case study`}
       className="group w-full h-full min-w-0 text-left bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col cursor-pointer"
     >
